@@ -14,10 +14,15 @@ Student::Student(char* newFirstName, char* newLastName, int newID, float newGPA)
 Student::~Student() {
   delete firstName;
   delete lastName;
+  delete &ID;
+  delete &GPA;
 }
 
-char* Student::getName() {
+char* Student::getFirstName() {
   return firstName;
+}
+
+char* Student::getLastName() {
   return lastName;
 }
 

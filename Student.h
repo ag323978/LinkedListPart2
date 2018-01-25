@@ -9,7 +9,8 @@ class Student {
  public:
   Student(char* newFirstName, char* newLastName, int newID, float newGPA);
   ~Student();
-  char* getName();
+  char* getFirstName();
+  char* getLastName();
   int getID();
   float getGPA();
  private:
